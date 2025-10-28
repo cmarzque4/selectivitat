@@ -2,25 +2,21 @@ const questions = [
     {
         type: "exercicis",
         category: "energia",
-        text: `S’han instal·lat \\(n = 50\\) aerogeneradors de 3 pales en un parc eòlic. 
-               El diàmetre de l’àrea d’escombratge de les pales és \\(d = 77 \\, \\text{m}\\) i el rendiment dels aerogeneradors \\(\\eta_{\\text{aerog}} = 0{,}68\\). 
-               S’estima que la velocitat mitjana del vent al parc és \\(v = 25 \\, \\text{km/h}\\); el parc està en funcionament 300 dies a l’any i obté energia 18 hores diàries. 
-               La potència mitjana del vent \\(P_{\\text{vent}}\\) es pot estimar, per a un aerogenerador, com l’energia cinètica del vent per unitat de temps mitjançant l’expressió:
-               \\[
-               P_{\\text{vent}} = \\frac{1}{2} \\rho A v^3
-               \\]
-               en què \\(A\\) és l’àrea que escombren les pales de l’aerogenerador, \\(\\rho\\) és la densitat de l’aire i \\(v\\) és la velocitat del vent. 
-               D’aquesta potència, el coeficient d’aprofitament del vent és \\(c_a = 0{,}42\\).
+        text: `Una cadira de rodes elèctrica disposa de dos sistemes per a controlar la marxa endavant. El
+        primer sistema és una palanca de control (o joystick). Si es fa servir aquest sistema, la cadira es
+        desplaça endavant quan l’usuari mou la palanca en la direcció corresponent. El segon sistema
+        permet a l’usuari controlar el moviment de la cadira inclinant el tronc cap endavant. Si es fa
+        servir aquest sistema, la cadira avança quan un sensor detecta que l’usuari s’inclina cap endavant.
+        La cadira disposa d’un botó que permet seleccionar un d’aquests dos sistemes de control.
+        Responeu a les qüestions que hi ha a continuació utilitzant les variables d’estat següents:
+
+              <img src="Variables.png" alt="Imatge relacionada amb la pregunta">
                
-               Sabent que \\(1{,}225 \\, \\text{g}\\) d’aire ocupen un volum d’\\(1 \\, \\text{m}^3\\), determineu:
-               <br><strong>a)</strong> La potència mitjana del vent \\(P_{\\text{vent}}\\) per a un aerogenerador. [0,5 punts]
-               <br><strong>b)</strong> La potència elèctrica útil \\(P_{\\text{útil}}\\) que generarà cada aerogenerador. [0,5 punts]
-               <br><strong>c)</strong> L’energia elèctrica total \\(E_{\\text{total}}\\) que es generarà al parc durant un any. [0,5 punts]
-               <br><strong>d)</strong> Els ingressos que tindrà el parc eòlic si el preu de venda de l’energia eòlica és \\(p_{\\text{venda}} = 7{,}624\\) cèntims d’euro per \\(\\text{kWh}\\). [0,5 punts]
-               <br><strong>e)</strong> En quin percentatge disminuirien els ingressos anteriors si la velocitat mitjana del vent es reduís un 10 %.
+               <br><strong>a)</strong> Elaboreu la taula de veritat del sistema. [1 punts]
+               <br><strong>b)</strong> Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la. [1 punts]
+               <br><strong>c)</strong> Dibuixeu l’esquema de contactes equivalent. [0,5 punts]
                <br><br>
-               <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`,  // Imatge opcional al final de la pregunta
-        correctAnswer: "",  // No és necessari aquí perquè es tracta d'un exercici obert
+        correctAnswer: "",
         steps: `
             <strong>a) Càlcul de la potència mitjana del vent \\(P_{\\text{vent}}\\) per a un aerogenerador:</strong>
             <br>
